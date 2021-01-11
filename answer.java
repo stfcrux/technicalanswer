@@ -37,13 +37,9 @@ static String isValid(String s) {
         } 
         
         if( freqCount.size() == 1){
-            // it means all the chars of string occurs same number of time
             return "YES";
         }
         else if( freqCount.size() > 2){
-            // aaabbbbccdd
-            // a : 3 b: 4 c:2 d:2 --> {3:1, 4:1, 2:2}
-            // we can't make this string a valid string just by deleting single char
             return "NO";
         }
         
